@@ -77,7 +77,9 @@ class Intercom
     {
         foreach ($this->execute_on_terminate_list as $data)
         {
-            $this->intercom_service->{$data['method']}($data['params']);
+            try {
+                $this->intercom_service->{$data['method']}($data['params']);
+            } catch (\Exception $e) {}
         }
     }
 
