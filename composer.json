@@ -14,5 +14,5 @@
   "autoload": {
     "psr-4": { "Nebo15\\LumenIntercom\\": "src" }
   },
-  "version": "1.0.0"
+  "version": "1.0.1"
 }
